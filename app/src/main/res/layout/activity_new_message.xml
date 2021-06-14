@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_message"
+    android:background="#ef5350">
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/niceone">
+        <RelativeLayout
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+            <ImageView
+
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/xt1"
+                >
+            </ImageView>
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:hint="To-"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                >
+            </TextView>
+            <AutoCompleteTextView
+                android:id="@+id/xyzname"
+                android:layout_toRightOf="@+id/to"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Name-"
+                android:completionThreshold="1"
+                android:textSize="10dp"
+
+                android:layout_marginTop="30dp"
+                android:layout_centerVertical="true"
+                >
+            </AutoCompleteTextView>
+            <AutoCompleteTextView
+                android:id="@+id/xyzphoneNo"
+                android:layout_toRightOf="@+id/xyzname"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:inputType="phone"
+                android:hint="xxxx-xxxxxxx"
+                android:layout_marginTop="30dp"
+                android:completionThreshold="1"
+                android:layout_centerVertical="true"
+                >
+            </AutoCompleteTextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            >
+            <ImageView
+                android:id="@+id/msg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/xt2"
+                >
+            </ImageView>
+            <EditText
+                android:gravity="top"
+                android:id="@+id/MessageToSend"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="250dp"
+                android:layout_height="130dp"
+                ></EditText>
+            <TextView
+                android:layout_above="@+id/msg"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:hint="Message"
+                >
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+            <Button
+                android:id="@+id/send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Send"
+                android:background="#ef5350"
+                android:layout_centerHorizontal="true"
+                android:requiresFadingEdge="vertical"
+                >
+
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="90dp"
+        android:textSize="25dp"
+        android:text="New Message"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+
+
+</RelativeLayout>

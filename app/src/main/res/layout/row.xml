@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="83dp"
+    android:id="@+id/ll"
+    android:weightSum="10">
+    <RelativeLayout
+    android:layout_weight="3"
+    android:layout_width="0dp"
+    android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/row_profile"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_camera_alt_24"
+            app:civ_circle_background_color="#d4d4d4">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:id="@+id/number"/>
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:id="@+id/address"/>
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:id="@+id/email"/>
+        <View
+            android:layout_marginTop="82dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

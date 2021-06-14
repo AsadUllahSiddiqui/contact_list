@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/themain"
+    android:background="#ef5350"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="15"
+    android:background="#ef5350"
+    >
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:src="@drawable/xt"
+
+            >
+        </ImageView>
+        <EditText
+            android:id="@+id/search_editTest"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:layout_centerVertical="true"
+            android:hint="Search..."
+            >
+        </EditText>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="300dp"
+            >
+
+        </ImageView>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:background="@drawable/niceone"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/new_contact"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="101dp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_baseline_add_circle_24">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/new_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="41dp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_baseline_message_24">
+        </ImageButton>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

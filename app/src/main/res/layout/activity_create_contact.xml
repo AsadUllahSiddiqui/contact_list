@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_contact"
+    android:background="#ef5350">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/niceone">
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/create_name"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:hint="Name">
+        </EditText>
+        <EditText
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:id="@+id/create_phone"
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:hint="Phone">
+        </EditText>
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/create_email"
+            android:layout_marginTop="160dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:hint="Email">
+        </EditText>
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/create_address"
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:hint="Address">
+        </EditText>
+
+        <Button
+            android:id="@+id/save_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:textColor="#ffffff"
+            android:background="#ef5350"
+            android:layout_below="@id/create_address"
+            android:layout_centerHorizontal="true"
+            >
+        </Button>
+    </RelativeLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+
+        app:civ_circle_background_color="#d4d4d4">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+</RelativeLayout>
